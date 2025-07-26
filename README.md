@@ -1,5 +1,5 @@
-# Overview
-That's my practical work on CMC MSU. In this program I proccess some financial data and represent it as japanese candles (in csv format) using PySpark library and MapReduce techonology.
+# Обзор
+Работа по представлению финансовых данных в виде японских свечей используя библиотеку PySpark и технологию MapReduce.
 # Как запускать из гугл-коллаба?
 1) Загрузите дата-сет в директорию гугл-коллаба
 2) Опционально загрузите XML файл для конфига
@@ -9,5 +9,7 @@ That's my practical work on CMC MSU. In this program I proccess some financial d
 6) Немного подождав, в директории коллаба появится директория "AnswerSparkTask", где и будут выходные CSV файлы в виде японских свечей
 # Credits
 Работу выполнил: Эркин Кадыров
+
 Группа: ЛТП ИИТ
+
 Дата: 26.07.2025
