@@ -106,6 +106,7 @@ candlestick_df = candlestick_df.withColumn("LOW", F.round(F.col("LOW"), 1))
 candlestick_df = candlestick_df.withColumn("CLOSE", F.round(F.col("CLOSE"), 1))
 ```
 Это основная часть, где происходит построение свечей.
+
 window_spec: Определяется временное окно, по которому будут группироваться сделки для каждой свечи. Ширина окна берется из options["candle.width"].
 
 candlestick_df = df.groupBy(...).agg(...): Это ключевой шаг, где применяется группировка (groupBy) по символу акции (#SYMBOL) и временному окну (window_spec). Для каждой группы (т.е. для каждого символа и каждого временного окна) выполняются агрегации (agg):
